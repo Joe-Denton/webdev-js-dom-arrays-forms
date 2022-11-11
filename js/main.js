@@ -19,6 +19,16 @@ let bodyElement =  document.querySelector("body")
 redBtn.addEventListener("click", function(){
     bodyElement.setAttribute("class", "redBack")
 })
+//blue
+let blueBtn = document.querySelector(".red")
+redBtn.addEventListener("click", function(){
+    bodyElement.setAttribute("class", "blueBack")
+})
+//green
+let greenBtn = document.querySelector(".red")
+redBtn.addEventListener("click", function(){
+    bodyElement.setAttribute("class", "greenBack")
+})
 
 //end
 })()
