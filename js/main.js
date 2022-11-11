@@ -20,13 +20,13 @@ redBtn.addEventListener("click", function(){
     bodyElement.setAttribute("class", "redBack")
 })
 //blue
-let blueBtn = document.querySelector(".red")
-redBtn.addEventListener("click", function(){
+let blueBtn = document.querySelector(".blue")
+blueBtn.addEventListener("click", function(){
     bodyElement.setAttribute("class", "blueBack")
 })
 //green
-let greenBtn = document.querySelector(".red")
-redBtn.addEventListener("click", function(){
+let greenBtn = document.querySelector(".green")
+greenBtn.addEventListener("click", function(){
     bodyElement.setAttribute("class", "greenBack")
 })
 
