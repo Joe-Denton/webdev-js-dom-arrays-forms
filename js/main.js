@@ -1,1 +1,1 @@
-console.info("Hi from the console")
+console.dir(document)
