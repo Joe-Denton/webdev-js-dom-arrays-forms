@@ -29,6 +29,11 @@ let greenBtn = document.querySelector(".green")
 greenBtn.addEventListener("click", function(){
     bodyElement.setAttribute("class", "greenBack")
 })
+//default
+let defaultBtn = document.querySelector(".reset")
+defaultBtn.addEventListener("click", function(){
+    bodyElement.removeAttribute("class")
+})
 
 //end
 })()
