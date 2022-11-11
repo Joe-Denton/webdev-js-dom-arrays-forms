@@ -1,1 +1,1 @@
-console.dir(document)
+document.getElementById("myHeading").innerHTML("Joe Denton")
