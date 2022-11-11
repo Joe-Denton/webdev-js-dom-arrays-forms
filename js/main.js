@@ -10,7 +10,7 @@ firstLink.setAttribute("href", "https://www.google.co.uk")
 //add a test event
 document.getElementById("myTestEvent").addEventListener("click", myFunction)
 function myFunction(ev){
-    console.dir(ev)
+    console.dir(ev.target)
 }
 //end
 })()
