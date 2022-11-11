@@ -14,26 +14,39 @@ function myFunction(ev){
 }
 //background colour changer
 //red
-let redBtn = document.querySelector(".red")
-let bodyElement =  document.querySelector("body")
-redBtn.addEventListener("click", function(){
-    bodyElement.setAttribute("class", "redBack")
-})
+//let redBtn = document.querySelector(".red")
+//let bodyElement =  document.querySelector("body")
+//redBtn.addEventListener("click", function(){
+    //bodyElement.setAttribute("class", "redBack")
+//})
 //blue
-let blueBtn = document.querySelector(".blue")
-blueBtn.addEventListener("click", function(){
-    bodyElement.setAttribute("class", "blueBack")
-})
+//let blueBtn = document.querySelector(".blue")
+//blueBtn.addEventListener("click", function(){
+//    bodyElement.setAttribute("class", "blueBack")
+//})
 //green
-let greenBtn = document.querySelector(".green")
-greenBtn.addEventListener("click", function(){
-    bodyElement.setAttribute("class", "greenBack")
-})
+//let greenBtn = document.querySelector(".green")
+//greenBtn.addEventListener("click", function(){
+//    bodyElement.setAttribute("class", "greenBack")
+//})
 //default
-let defaultBtn = document.querySelector(".reset")
-defaultBtn.addEventListener("click", function(){
-    bodyElement.removeAttribute("class")
-})
-
+//let defaultBtn = document.querySelector(".reset")
+//defaultBtn.addEventListener("click", function(){
+//    bodyElement.removeAttribute("class")
+//})
+//more efficient way
+let bodyElement = documetn.querySelector("body")
+let colourBtns = document.querySelectorAll(".colPicker")
+for(let i=0; i<colourBtns.length; i++){
+    colourBtns[i].addEventListener("click", chgColour)
+}
+function chgColour(ev){
+    let newColour = ev.target.classList[0] +"Back"
+    if(newColour === "resetBack"){
+        bodyElement.removeAttribute("class")
+    } else{
+    bodyElement.setAttribute("class", newColour)
+    }
+}
 //end
 })()
