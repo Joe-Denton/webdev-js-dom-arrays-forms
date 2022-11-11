@@ -12,5 +12,13 @@ document.getElementById("myTestEvent").addEventListener("click", myFunction)
 function myFunction(ev){
     console.dir(ev.target)
 }
+//background colour changer
+//red
+let redBtn = document.querySelector(".red")
+let bodyElement =  document.querySelector("body")
+redBtn.addEventListener("click", function(){
+    bodyElement.setAttribute("class", "redBack")
+})
+
 //end
 })()
