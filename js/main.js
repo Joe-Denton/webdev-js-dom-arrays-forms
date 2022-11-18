@@ -35,7 +35,7 @@ function myFunction(ev){
 //    bodyElement.removeAttribute("class")
 //})
 //more efficient way
-let bodyElement = documetn.querySelector("body")
+let bodyElement = document.querySelector("body")
 let colourBtns = document.querySelectorAll(".colPicker")
 for(let i=0; i<colourBtns.length; i++){
     colourBtns[i].addEventListener("click", chgColour)
@@ -48,5 +48,22 @@ function chgColour(ev){
     bodyElement.setAttribute("class", newColour)
     }
 }
+
+//image rotator
+let imageAr = ['images/view1.jpg', 'images/view2.jpg', 'images/view3.jpg',
+'images/view4.jpg', 'images/view5.jpg', 'images/view6.jpg'];
+let count = 0
+document.getElementById("myImages").setAttribute('src', imageAr[count])
+
+setInterval(chgImage, 5000)
+
+function chgImage(){
+    count++
+    if(count === imageAr.length){
+        count = 0
+    }
+    document.getElementById("myImages").setAttribute('src', imageAr[count])
+}
+
 //end
 })()
