@@ -11,5 +11,7 @@ convertForm.addEventListener('submit', function(ev) {
     ev.preventDefault();
 })
 
+document.getElementById('pounds').value;
+
 //end
 })()
